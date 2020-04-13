@@ -18,7 +18,8 @@ header{
     align-items: center;
     background-color: black;
 }
-header .logo span{color:white;}
+header .logo{display:flex; justify-content: center;}
+header .logo span{font-size:19px; color:white;}
 header .logo .fa-youtube{
     font-size: 24px; margin:0 10px; color: red;;
 }
@@ -27,6 +28,8 @@ header .icons{
     font-size:24px; 
     color:white;
 }
+
+
 
 header .icons .fa-ellipsis-v{
     margin:0 10px;
@@ -45,20 +48,40 @@ header .icons .fa-ellipsis-v{
     max-width:150px;
 }
 
-
 .title{
-    padding-left: 0;
-   margin:10px;
+   padding-left: 0;
+   margin:0 10px;
 }
 
 .tag{display:flex; padding-left: 0;}
 .tag li{color: blue; font-size: small; margin-right:5px;}
 .main{
     display:flex; 
-    align-items: flex-start;
-
 }
-.main button{margin:10px;}
+
+/* .main .TitleTitle{
+    font-size:medium;
+} */
+.main .TitleTitle.clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.main .moreBtn{
+    margin:0 10px;
+    height: 100%;
+}
+
+.main .moreBtn.clicked{
+    transform: rotate(180deg);
+    transition: transform 300ms ease-in-out;
+}
+.icons{color:gray;}
+.icons i.active{
+    color:blue;
+}
 
 .fiveicons .icons{display: flex; 
     justify-content: space-around;
@@ -108,18 +131,22 @@ header .icons .fa-ellipsis-v{
     border-radius: 50px;
 }
 .channel .info{display: flex; flex-direction: column;}
-.channel .subscribe{text-transform: uppercase; color:red; cursor: pointer;}
+.channel .subscribe{text-transform: uppercase; color:red; cursor: pointer; font-weight: 600; font-size:15px;}
 
 .next{
-    display:flex;
+    display:flex; padding-bottom: 20px;
 }
 .next>div{
     display:flex;
 }
-.list{margin:10px}
+.list{margin:0 10px;}
 
-@media (min-width:600px){
+@media (min-width:768px){
     .mainTitle{
        display:flex;
     }
+}
+
+@media (min-width:1100px){
+    .moreBtn{display: none;}
 }
