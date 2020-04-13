@@ -1,0 +1,126 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+ul li{list-style: none; margin: 0;}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+header{
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+header .logo span{color:white;}
+header .logo .fa-youtube{
+    font-size: 24px; margin:0 10px; color: red;;
+}
+
+header .icons{
+    font-size:24px; 
+    color:white;
+}
+
+header .icons .fa-ellipsis-v{
+    margin:0 10px;
+}
+
+.video{
+    position: sticky;
+    top:0;
+    text-align: center;
+    background-color: black;
+}
+
+.video video{
+    width:100%;
+    height:100%;
+    max-width:150px;
+}
+
+
+.title{
+    padding-left: 0;
+   margin:10px;
+}
+
+.tag{display:flex; padding-left: 0;}
+.tag li{color: blue; font-size: small; margin-right:5px;}
+.main{
+    display:flex; 
+    align-items: flex-start;
+
+}
+.main button{margin:10px;}
+
+.fiveicons .icons{display: flex; 
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 0;
+
+}
+/* .profile{
+    margin:10px; 
+    border-top: 0.5px solid lightgrey;
+    border-bottom: 0.5px solid lightgrey;
+
+}
+.profile>div{
+    margin:10px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .photoandText{
+    display:flex;
+    align-items: center;
+
+}
+.profile .photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+} */
+
+.channel{
+    padding:10px; 
+    display:flex; 
+    border-top:0.5px solid lightgrey; 
+    border-bottom:0.5px solid lightgrey;
+    justify-content: space-between;
+}
+.channel .metadata{
+    display:flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.channel img{
+    margin-right: 10px; 
+    width:50px; height: 50px; 
+    border-radius: 50px;
+}
+.channel .info{display: flex; flex-direction: column;}
+.channel .subscribe{text-transform: uppercase; color:red; cursor: pointer;}
+
+.next{
+    display:flex;
+}
+.next>div{
+    display:flex;
+}
+.list{margin:10px}
+
+@media (min-width:600px){
+    .mainTitle{
+       display:flex;
+    }
+}
